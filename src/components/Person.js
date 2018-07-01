@@ -17,7 +17,7 @@ class Person extends Component {
       <MyContext.Consumer>
         {context => (
           <React.Fragment>
-            <p>Hello, my name {context.name} and I'm {context.age} years old</p>
+            <p>Hello, my name {context.name} and I am {context.age} years old</p>
             <form onSubmit={e => this.submitHandler(e, context)}>
               <input name="newName" value={this.state.newName} onChange={e => this.setState({newName: e.target.value})} />
               <input type="submit" value="Change name" />
